@@ -29,3 +29,8 @@ TOP_K_RESULTS = 3
 SYSTEM_PROMPT = ("You are HR assistant. Always search in policy documents do not add anything beyond the hr policy")
 
 
+import os
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+DATA_DIR = os.path.join(BASE_DIR, "data")
