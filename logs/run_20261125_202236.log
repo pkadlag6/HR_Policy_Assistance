@@ -1,0 +1,12 @@
+2026-11-25 20:22:36,949 | INFO | hr_assistant.vector_store | Loading faiss index from 'data\faiss.index'
+2026-11-25 20:22:36,949 | INFO | hr_assistant.embeddings | Initializing embeddings model 'jina-embeddings-v3'
+2026-11-25 20:22:36,956 | INFO | faiss.loader | Loading faiss with AVX2 support.
+2026-11-25 20:22:36,956 | INFO | faiss.loader | Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-11-25 20:22:36,957 | INFO | faiss.loader | Loading faiss.
+2026-11-25 20:22:37,003 | INFO | faiss.loader | Successfully loaded faiss.
+2026-11-25 20:22:37,023 | INFO | hr_assistant.vector_store | Creating retrievers with top_k=3
+2026-11-25 20:22:37,028 | INFO | hr_assistant.llm | Intialized llm 'openai/gpt-oss-120b'
+2026-11-25 20:23:20,195 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-11-25 20:23:21,469 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-11-25 20:23:23,146 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"

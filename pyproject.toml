@@ -1,0 +1,18 @@
+[project]
+name = "hr-policy-project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "faiss-cpu>=1.16.0",
+    "langchain-groq>=1.2.1",
+    "streamlit>=1.67.0",
+]
+
+[project.scripts]
+hr-policy-project = "hr_policy_project:main"
+
+[build-system]
+requires = ["uv_build>=0.13.9,<0.14.0"]
+build-backend = "uv_build"

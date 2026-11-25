@@ -1,0 +1,16 @@
+2026-11-25 20:11:59,255 | INFO | hr_assistant.pipeline | No vector store on disk, building it from scratch
+2026-11-25 20:11:59,553 | INFO | hr_assistant.document_loader | Loaded 12 documents(s)
+2026-11-25 20:11:59,553 | INFO | hr_assistant.splitter | Split document(s) into 12 chunk(s)
+2026-11-25 20:11:59,555 | INFO | hr_assistant.vector_store | Embedding %d chunk(s) and building faiss index
+2026-11-25 20:11:59,555 | INFO | hr_assistant.embeddings | Initializing embeddings model 'jina-embeddings-v3'
+2026-11-25 20:11:59,557 | INFO | hr_assistant.vector_store | Faiss build in memory
+2026-11-25 20:12:02,270 | INFO | faiss.loader | Loading faiss with AVX2 support.
+2026-11-25 20:12:02,270 | INFO | faiss.loader | Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-11-25 20:12:02,270 | INFO | faiss.loader | Loading faiss.
+2026-11-25 20:12:02,760 | INFO | faiss.loader | Successfully loaded faiss.
+2026-11-25 20:12:02,845 | INFO | hr_assistant.vector_store | SAVED faiss index to 'data\faiss.index'
+2026-11-25 20:12:02,845 | INFO | hr_assistant.vector_store | Creating retrievers with top_k=3
+2026-11-25 20:12:02,848 | INFO | hr_assistant.llm | Intialized llm 'openai/gpt-oss-120b'
+2026-11-25 20:12:24,502 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-11-25 20:12:25,330 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
